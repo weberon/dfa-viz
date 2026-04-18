@@ -1,0 +1,941 @@
+{
+  "ans_customer_email_que_customer_phone": {
+    "id": "1fe70b83-640b-4145-b721-615b537c808d",
+    "name": "ans_customer_email_que_customer_phone",
+    "inputContext": [
+      "ref_3",
+      "customer_name"
+    ],
+    "outputContexts": [
+      {
+        "name": "customer_email",
+        "lifespan": 1
+      },
+      {
+        "name": "ref_4",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_customer_email_que_customer_phone-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "If we have to reach you, what is your phone number?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "jp@web.com",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "my email: ",
+            "userDefined": false
+          },
+          {
+            "text": "james@bond.io",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "joshua@weberon.net",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "99853783-ef29-45cd-a3af-2cebcd026792",
+      "parentId": "1fe70b83-640b-4145-b721-615b537c808d",
+      "rootParentId": "1fe70b83-640b-4145-b721-615b537c808d",
+      "name": "ans_customer_email_que_customer_phone - fallback",
+      "inputContext": [
+        "customer_email",
+        "ref_4",
+        "ans_customer_email_que_customer_phone-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ref_4",
+          "lifespan": 1
+        },
+        {
+          "name": "customer_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_customer_email_que_customer_phone-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please help us with your phone number"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ref_3",
+        "customer_name"
+      ],
+      "outputContexts": {
+        "customer_email": 1,
+        "ref_4": 1,
+        "ans_customer_email_que_customer_phone-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_customer_name_que_customer_email"
+    ],
+    "activeCtx": {
+      "customer_email": 1,
+      "ref_4": 1,
+      "ans_customer_email_que_customer_phone-followup": 2
+    },
+    "outputIntents": [
+      "ans_customer_phone_que_b4_operator_req"
+    ]
+  },
+  "ans_customer_name_que_customer_email": {
+    "id": "07b2b016-da59-4866-88d2-2c482e1bc582",
+    "name": "ans_customer_name_que_customer_email",
+    "inputContext": [
+      "ref_2",
+      "issue_described"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_3",
+        "lifespan": 1
+      },
+      {
+        "name": "customer_name",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is your email that we can send our response to?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "abc def ch",
+            "meta": "@sys.any",
+            "alias": "customer_name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Praveen",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Praveen Kumar",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "Praveen Kumar",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "Joshua Ponnachan",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "My name is ",
+            "userDefined": false
+          },
+          {
+            "text": "Abdulla Faqruddin",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "Marie John",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Marie John",
+            "meta": "@name_regex",
+            "alias": "name_regex",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Joshua Ponnachan",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "James",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          },
+          {
+            "text": ", Bond",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "767fc73a-f220-4746-a716-89b2a0863695",
+      "parentId": "07b2b016-da59-4866-88d2-2c482e1bc582",
+      "rootParentId": "07b2b016-da59-4866-88d2-2c482e1bc582",
+      "name": "ans_customer_name_que_customer_email - fallback",
+      "inputContext": [
+        "ref_3",
+        "customer_name",
+        "ans_customer_name_que_customer_email-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ref_3",
+          "lifespan": 1
+        },
+        {
+          "name": "customer_name",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_customer_name_que_customer_email-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please help us with your email address"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ref_2",
+        "issue_described"
+      ],
+      "outputContexts": {
+        "ref_3": 1,
+        "customer_name": 1
+      }
+    },
+    "inputIntents": [
+      "ans_welcome_que_customer_name"
+    ],
+    "activeCtx": {
+      "ans_welcome_que_customer_name-followup": 1,
+      "ref_3": 1,
+      "customer_name": 1
+    },
+    "outputIntents": [
+      "ans_customer_email_que_customer_phone"
+    ]
+  },
+  "ans_customer_phone_que_b4_operator_req": {
+    "id": "0e7064aa-596f-4fa7-b592-82e32b0e1ca7",
+    "name": "ans_customer_phone_que_b4_operator_req",
+    "inputContext": [
+      "ref_4",
+      "customer_email"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_5",
+        "lifespan": 1
+      },
+      {
+        "name": "customer_phone",
+        "lifespan": 1
+      },
+      {
+        "name": "b4_operator_req",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Would you like to continue this chat with our Support specialist?",
+          "quick_replies": [
+            {
+              "payload": "Yes",
+              "title": "Yes"
+            },
+            {
+              "payload": "No",
+              "title": "No"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "1234567890",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "925-452-7483",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "123-456-7890",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+91-7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "0091 7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ref_4",
+        "customer_email"
+      ],
+      "outputContexts": {
+        "ref_5": 1,
+        "customer_phone": 1,
+        "b4_operator_req": 1
+      }
+    },
+    "inputIntents": [
+      "ans_customer_email_que_customer_phone"
+    ],
+    "activeCtx": {
+      "ans_customer_email_que_customer_phone-followup": 1,
+      "ref_5": 1,
+      "customer_phone": 1,
+      "b4_operator_req": 1
+    },
+    "outputIntents": [
+      "ans_no_b4_operator_req_que_b4_operator_req",
+      "ans_yes_b4_operator_req_que_operator_req"
+    ]
+  },
+  "ans_no_b4_operator_req_que_b4_operator_req": {
+    "id": "e7fab912-46a0-4042-a957-4a0baa743281",
+    "name": "ans_no_b4_operator_req_que_b4_operator_req",
+    "inputContext": [
+      "ref_5",
+      "customer_phone",
+      "b4_operator_req"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_5",
+        "lifespan": 1
+      },
+      {
+        "name": "customer_phone",
+        "lifespan": 1
+      },
+      {
+        "name": "b4_operator_req",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "payload": "Yes",
+              "title": "Yes"
+            },
+            {
+              "payload": "No",
+              "title": "No"
+            }
+          ],
+          "text": "Would you like to continue this chat with our Support specialist?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ref_5",
+        "customer_phone",
+        "b4_operator_req"
+      ],
+      "outputContexts": {
+        "ref_5": 1,
+        "customer_phone": 1,
+        "b4_operator_req": 1
+      }
+    },
+    "inputIntents": [
+      "ans_customer_phone_que_b4_operator_req"
+    ],
+    "activeCtx": {
+      "ref_5": 1,
+      "customer_phone": 1,
+      "b4_operator_req": 1
+    },
+    "outputIntents": [
+      "ans_no_b4_operator_req_que_b4_operator_req",
+      "ans_yes_b4_operator_req_que_operator_req"
+    ]
+  },
+  "ans_welcome_que_customer_name": {
+    "id": "c39241d4-1822-411d-8d2b-c4648c1a6ea4",
+    "name": "ans_welcome_que_customer_name",
+    "inputContext": [
+      "welcome",
+      "ref_1",
+      "describe_issue"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_2",
+        "lifespan": 1
+      },
+      {
+        "name": "issue_described",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_welcome_que_customer_name-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Who do I have the pleasure of chatting?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Need some help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "74989a25-e80f-409a-a9fa-5ebfad8ea581",
+      "parentId": "c39241d4-1822-411d-8d2b-c4648c1a6ea4",
+      "rootParentId": "c39241d4-1822-411d-8d2b-c4648c1a6ea4",
+      "name": "ans_welcome_que_customer_name - fallback",
+      "inputContext": [
+        "ref_2",
+        "issue_described",
+        "ans_welcome_que_customer_name-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ref_2",
+          "lifespan": 1
+        },
+        {
+          "name": "issue_described",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_welcome_que_customer_name-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please help us with your name"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "welcome",
+        "ref_1",
+        "describe_issue"
+      ],
+      "outputContexts": {
+        "ref_2": 1,
+        "issue_described": 1,
+        "ans_welcome_que_customer_name-followup": 2
+      }
+    },
+    "inputIntents": [
+      "Default Welcome Intent"
+    ],
+    "activeCtx": {
+      "DefaultWelcomeIntent-followup": 1,
+      "ref_2": 1,
+      "issue_described": 1,
+      "ans_welcome_que_customer_name-followup": 2
+    },
+    "outputIntents": [
+      "ans_customer_name_que_customer_email"
+    ]
+  },
+  "ans_yes_b4_operator_req_que_operator_req": {
+    "id": "a98a9363-36e2-4d77-96de-a3ef2520f709",
+    "name": "ans_yes_b4_operator_req_que_operator_req",
+    "inputContext": [
+      "ref_5",
+      "customer_phone",
+      "b4_operator_req"
+    ],
+    "outputContexts": [
+      {
+        "name": "operator_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please wait"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ref_5",
+        "customer_phone",
+        "b4_operator_req"
+      ],
+      "outputContexts": {
+        "operator_request": 1
+      }
+    },
+    "hasOperatorRequest": true,
+    "inputIntents": [
+      "ans_no_b4_operator_req_que_b4_operator_req",
+      "ans_customer_phone_que_b4_operator_req"
+    ],
+    "activeCtx": {
+      "operator_request": 1
+    },
+    "outputIntents": []
+  },
+  "Default Welcome Intent": {
+    "id": "467190d0-87b9-48b3-a600-4f34fbfa1d40",
+    "name": "Default Welcome Intent",
+    "inputContext": [],
+    "outputContexts": [
+      {
+        "name": "welcome",
+        "lifespan": 1
+      },
+      {
+        "name": "ref_1",
+        "lifespan": 1
+      },
+      {
+        "name": "describe_issue",
+        "lifespan": 1
+      },
+      {
+        "name": "DefaultWelcomeIntent-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Welcome....Briefly describe how we can help you?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "just going to say hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "heya",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "howdy",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "greetings",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "long time no see",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "lovely day isn't it",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I greet you",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello again",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "a good day",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "6dd7dc47-94a2-4b48-b05e-d38ea4b4dada",
+      "parentId": "467190d0-87b9-48b3-a600-4f34fbfa1d40",
+      "rootParentId": "467190d0-87b9-48b3-a600-4f34fbfa1d40",
+      "name": "Default Welcome Intent - fallback",
+      "inputContext": [
+        "welcome",
+        "ref_1",
+        "describe_issue",
+        "DefaultWelcomeIntent-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "welcome",
+          "lifespan": 1
+        },
+        {
+          "name": "ref_1",
+          "lifespan": 1
+        },
+        {
+          "name": "describe_issue",
+          "lifespan": 1
+        },
+        {
+          "name": "DefaultWelcomeIntent-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please briefly describe how we can help you"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [],
+      "outputContexts": {
+        "welcome": 1,
+        "ref_1": 1,
+        "describe_issue": 1,
+        "DefaultWelcomeIntent-followup": 2
+      }
+    },
+    "inputIntents": [],
+    "activeCtx": {
+      "welcome": 1,
+      "ref_1": 1,
+      "describe_issue": 1,
+      "DefaultWelcomeIntent-followup": 2
+    },
+    "outputIntents": [
+      "ans_welcome_que_customer_name"
+    ]
+  }
+}

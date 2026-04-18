@@ -1,0 +1,1874 @@
+{
+  "ans_01_welcome_que_02_ownership": {
+    "id": "eb91ae9d-c428-41b3-8f89-389dd753611b",
+    "name": "ans_01_welcome_que_02_ownership",
+    "inputContext": [
+      "welcome",
+      "buyers_01"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_01_welcome_que_02_ownership",
+        "lifespan": 1
+      },
+      {
+        "name": "que_02_ownership",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "payload": "Own",
+              "title": "Own"
+            },
+            {
+              "payload": "Rent",
+              "title": "Rent"
+            },
+            {
+              "payload": "Rent to Own (Lease)",
+              "title": "Rent to Own (Lease)"
+            }
+          ],
+          "text": "Do you currently RENT or OWN your home?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "> 6 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "3 to 6 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "< 3 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "welcome",
+        "buyers_01"
+      ],
+      "outputContexts": {
+        "ans_01_welcome_que_02_ownership": 1,
+        "que_02_ownership": 1
+      }
+    },
+    "inputIntents": [
+      "Default Welcome Intent"
+    ],
+    "activeCtx": {
+      "ans_01_welcome_que_02_ownership": 1,
+      "que_02_ownership": 1
+    },
+    "outputIntents": [
+      "ans_02_ownership_own_que_03_move_plan",
+      "ans_02_ownership_que_03_move_plan"
+    ]
+  },
+  "ans_02_ownership_own_que_03_move_plan": {
+    "id": "67db304f-3d3c-4323-982d-3b16deaa3d32",
+    "name": "ans_02_ownership_own_que_03_move_plan",
+    "inputContext": [
+      "ans_01_welcome_que_02_ownership",
+      "que_02_ownership"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_02_ownership_que_03_move_plan",
+        "lifespan": 1
+      },
+      {
+        "name": "que_03_move_plan",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_02_ownership_own_que_03_move_plan",
+        "lifespan": 3
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Are you planning on staying in the area or moving out?",
+          "quick_replies": [
+            {
+              "title": "Stay in the area",
+              "payload": "Stay in the area"
+            },
+            {
+              "title": "Move out of this area.",
+              "payload": "Move out of this area."
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Own",
+            "meta": "@sys.any",
+            "alias": "rentOrOwn",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_01_welcome_que_02_ownership",
+        "que_02_ownership"
+      ],
+      "outputContexts": {
+        "ans_02_ownership_que_03_move_plan": 1,
+        "que_03_move_plan": 1,
+        "ans_02_ownership_own_que_03_move_plan": 3
+      }
+    },
+    "inputIntents": [
+      "ans_01_welcome_que_02_ownership"
+    ],
+    "activeCtx": {
+      "ans_02_ownership_que_03_move_plan": 1,
+      "que_03_move_plan": 1,
+      "ans_02_ownership_own_que_03_move_plan": 3
+    },
+    "outputIntents": [
+      "ans_03_move_plan_que_04_area_of_intrest"
+    ]
+  },
+  "ans_02_ownership_que_03_move_plan": {
+    "id": "e668fe84-22ea-4f87-a14d-629fa20044b1",
+    "name": "ans_02_ownership_que_03_move_plan",
+    "inputContext": [
+      "ans_01_welcome_que_02_ownership",
+      "que_02_ownership"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_02_ownership_que_03_move_plan",
+        "lifespan": 1
+      },
+      {
+        "name": "que_03_move_plan",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Stay in the area",
+              "payload": "Stay in the area"
+            },
+            {
+              "title": "Move out of this area.",
+              "payload": "Move out of this area."
+            }
+          ],
+          "text": "Are you planning on staying in the area or moving out?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "lease",
+            "meta": "@sys.any",
+            "alias": "rentOrOwn",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Rent to Own (Lease)",
+            "meta": "@sys.any",
+            "alias": "rentOrOwn",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Rent",
+            "meta": "@sys.any",
+            "alias": "rentOrOwn",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_01_welcome_que_02_ownership",
+        "que_02_ownership"
+      ],
+      "outputContexts": {
+        "ans_02_ownership_que_03_move_plan": 1,
+        "que_03_move_plan": 1
+      }
+    },
+    "inputIntents": [
+      "ans_01_welcome_que_02_ownership"
+    ],
+    "activeCtx": {
+      "ans_02_ownership_que_03_move_plan": 1,
+      "que_03_move_plan": 1
+    },
+    "outputIntents": [
+      "ans_03_move_plan_que_04_area_of_intrest"
+    ]
+  },
+  "ans_03_move_plan_que_04_area_of_intrest": {
+    "id": "d353fd21-6803-4774-bc38-b32cc02587cb",
+    "name": "ans_03_move_plan_que_04_area_of_intrest",
+    "inputContext": [
+      "ans_02_ownership_que_03_move_plan",
+      "que_03_move_plan"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_03_move_plan_que_04_area_of_intrest",
+        "lifespan": 1
+      },
+      {
+        "name": "que_04_area_of_intrest",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Fremont",
+              "payload": "Fremont"
+            },
+            {
+              "title": "Newark",
+              "payload": "Newark"
+            },
+            {
+              "title": "Union City",
+              "payload": "Union City"
+            },
+            {
+              "title": "San Jose",
+              "payload": "San Jose"
+            },
+            {
+              "payload": "San Ramon",
+              "title": "San Ramon"
+            },
+            {
+              "payload": "Dublin",
+              "title": "Dublin"
+            },
+            {
+              "payload": "Other",
+              "title": "Other"
+            }
+          ],
+          "text": "Which area are you interested in?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Stay in the area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Move out of this area.",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_02_ownership_que_03_move_plan",
+        "que_03_move_plan"
+      ],
+      "outputContexts": {
+        "ans_03_move_plan_que_04_area_of_intrest": 1,
+        "que_04_area_of_intrest": 1
+      }
+    },
+    "inputIntents": [
+      "ans_02_ownership_own_que_03_move_plan",
+      "ans_02_ownership_que_03_move_plan"
+    ],
+    "activeCtx": {
+      "ans_03_move_plan_que_04_area_of_intrest": 1,
+      "que_04_area_of_intrest": 1
+    },
+    "outputIntents": [
+      "ans_04_area_of_intrest_que_05_period_of_move"
+    ]
+  },
+  "ans_04_area_of_intrest_que_05_period_of_move": {
+    "id": "9107f220-ba7d-4c2b-aec6-0c40ee254a19",
+    "name": "ans_04_area_of_intrest_que_05_period_of_move",
+    "inputContext": [
+      "ans_03_move_plan_que_04_area_of_intrest",
+      "que_04_area_of_intrest"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_04_area_of_intrest_que_05_period_of_move",
+        "lifespan": 1
+      },
+      {
+        "name": "que_05_period_of_move",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "If you were to move, when would it be?",
+          "quick_replies": [
+            {
+              "title": "< 3 months",
+              "payload": "< 3 months"
+            },
+            {
+              "title": "3 to 6 months",
+              "payload": "3 to 6 months"
+            },
+            {
+              "title": "> 6 months",
+              "payload": "> 6 months"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "other",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Dublin",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "San Ramon",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "San Jose",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Union City",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Newark",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Fremont",
+            "meta": "@sys.geo-city",
+            "alias": "interested_area",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_03_move_plan_que_04_area_of_intrest",
+        "que_04_area_of_intrest"
+      ],
+      "outputContexts": {
+        "ans_04_area_of_intrest_que_05_period_of_move": 1,
+        "que_05_period_of_move": 1
+      }
+    },
+    "inputIntents": [
+      "ans_03_move_plan_que_04_area_of_intrest"
+    ],
+    "activeCtx": {
+      "ans_04_area_of_intrest_que_05_period_of_move": 1,
+      "que_05_period_of_move": 1
+    },
+    "outputIntents": [
+      "ans_05_period_of_move_que_03to05_sell_buy_option",
+      "ans_05_period_of_move_que_07_realtor_help"
+    ]
+  },
+  "ans_05_period_of_move_que_03to05_sell_buy_option": {
+    "id": "f5f6a11c-3455-4622-b73f-747e94cbe06e",
+    "name": "ans_05_period_of_move_que_03to05_sell_buy_option",
+    "inputContext": [
+      "ans_04_area_of_intrest_que_05_period_of_move",
+      "que_05_period_of_move",
+      "ans_02_ownership_own_que_03_move_plan"
+    ],
+    "outputContexts": [
+      {
+        "name": "buyer",
+        "lifespan": 3
+      },
+      {
+        "name": "ans_04_area_of_intrest_que_05_period_of_move",
+        "lifespan": 1
+      },
+      {
+        "name": "que_05_period_of_move",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Sell before buying.",
+              "payload": "Sell before buying."
+            },
+            {
+              "title": "Buy before selling.",
+              "payload": "Buy before selling."
+            },
+            {
+              "title": "Not sure",
+              "payload": "Not sure"
+            }
+          ],
+          "text": "Would you prefer to sell your home first before buying your new home or buy first?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "< 3 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "3 to 6 months",
+            "meta": "@sys.date-period",
+            "alias": "date-period",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "> 6 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_04_area_of_intrest_que_05_period_of_move",
+        "que_05_period_of_move",
+        "ans_02_ownership_own_que_03_move_plan"
+      ],
+      "outputContexts": {
+        "buyer": 3,
+        "ans_04_area_of_intrest_que_05_period_of_move": 1,
+        "que_05_period_of_move": 1
+      }
+    },
+    "inputIntents": [
+      "ans_04_area_of_intrest_que_05_period_of_move"
+    ],
+    "activeCtx": {
+      "buyer": 3,
+      "ans_04_area_of_intrest_que_05_period_of_move": 1,
+      "que_05_period_of_move": 1
+    },
+    "outputIntents": [
+      "ans_05_period_of_move_que_03to05_sell_buy_option",
+      "ans_05_period_of_move_que_07_realtor_help"
+    ]
+  },
+  "ans_05_period_of_move_que_07_realtor_help": {
+    "id": "58ecdd13-fc2a-460d-af44-82443ce5c3f3",
+    "name": "ans_05_period_of_move_que_07_realtor_help",
+    "inputContext": [
+      "ans_04_area_of_intrest_que_05_period_of_move",
+      "que_05_period_of_move"
+    ],
+    "outputContexts": [
+      {
+        "name": "buyers_07",
+        "lifespan": 1
+      },
+      {
+        "name": "buyers_07_z",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_05_period_of_move_que_07_realtor_help",
+        "lifespan": 1
+      },
+      {
+        "name": "que_07_realtor_help",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "payload": "No",
+              "title": "No"
+            },
+            {
+              "payload": "May be",
+              "title": "May be"
+            },
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            }
+          ],
+          "text": "Do you have a Realtor to help you, when the time is right?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Not sure",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Buy before selling.",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Sell before buying.",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "> 6 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "3 to 6 months",
+            "meta": "@sys.date-period",
+            "alias": "date-period",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "< 3 months",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_04_area_of_intrest_que_05_period_of_move",
+        "que_05_period_of_move"
+      ],
+      "outputContexts": {
+        "buyers_07": 1,
+        "buyers_07_z": 1,
+        "ans_05_period_of_move_que_07_realtor_help": 1,
+        "que_07_realtor_help": 1
+      }
+    },
+    "inputIntents": [
+      "ans_05_period_of_move_que_03to05_sell_buy_option",
+      "ans_04_area_of_intrest_que_05_period_of_move"
+    ],
+    "activeCtx": {
+      "buyers_07": 1,
+      "buyers_07_z": 1,
+      "ans_05_period_of_move_que_07_realtor_help": 1,
+      "que_07_realtor_help": 1
+    },
+    "outputIntents": [
+      "ans_07_realtor_help_que_08_special_content"
+    ]
+  },
+  "ans_07_realtor_help_que_08_special_content": {
+    "id": "d19a02e4-e4da-433f-81f3-a829ef4cc71a",
+    "name": "ans_07_realtor_help_que_08_special_content",
+    "inputContext": [
+      "buyers_07",
+      "buyers_07_z",
+      "ans_05_period_of_move_que_07_realtor_help",
+      "que_07_realtor_help"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_07_realtor_help_que_08_special_content",
+        "lifespan": 1
+      },
+      {
+        "name": "que_08_special_content",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            },
+            {
+              "payload": "May be",
+              "title": "May be"
+            }
+          ],
+          "text": "Would you be open to receiving list of “hard to find” homes in your area from me? My list includes all homes from all companies in addition to bank-owned, foreclosures and hard to find homes."
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "May be",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "buyers_07",
+        "buyers_07_z",
+        "ans_05_period_of_move_que_07_realtor_help",
+        "que_07_realtor_help"
+      ],
+      "outputContexts": {
+        "ans_07_realtor_help_que_08_special_content": 1,
+        "que_08_special_content": 1
+      }
+    },
+    "inputIntents": [
+      "ans_05_period_of_move_que_07_realtor_help"
+    ],
+    "activeCtx": {
+      "ans_07_realtor_help_que_08_special_content": 1,
+      "que_08_special_content": 1
+    },
+    "outputIntents": [
+      "ans_08_special_content_que_09_email"
+    ]
+  },
+  "ans_08_special_content_que_09_email": {
+    "id": "bada3951-31e8-4a40-8956-a8dca020eafc",
+    "name": "ans_08_special_content_que_09_email",
+    "inputContext": [
+      "ans_07_realtor_help_que_08_special_content",
+      "que_08_special_content"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_08_special_content_que_09_email",
+        "lifespan": 1
+      },
+      {
+        "name": "que_09_email",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_08_special_content_que_09_email-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "I have created a personalized market snapshot for you. What is your email that I can send this to?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "May be",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "7f210635-e477-4492-9a80-deb7804fa3fe",
+      "parentId": "bada3951-31e8-4a40-8956-a8dca020eafc",
+      "rootParentId": "bada3951-31e8-4a40-8956-a8dca020eafc",
+      "name": "ans_08_special_content_que_09_email - fallback",
+      "inputContext": [
+        "ans_08_special_content_que_09_email",
+        "que_09_email",
+        "ans_08_special_content_que_09_email-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ans_08_special_content_que_09_email",
+          "lifespan": 1
+        },
+        {
+          "name": "que_09_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_08_special_content_que_09_email-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide valid email"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ans_07_realtor_help_que_08_special_content",
+        "que_08_special_content"
+      ],
+      "outputContexts": {
+        "ans_08_special_content_que_09_email": 1,
+        "que_09_email": 1,
+        "ans_08_special_content_que_09_email-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_07_realtor_help_que_08_special_content"
+    ],
+    "activeCtx": {
+      "ans_08_special_content_que_09_email": 1,
+      "que_09_email": 1,
+      "ans_08_special_content_que_09_email-followup": 2
+    },
+    "outputIntents": [
+      "ans_buyer_email_que_phone"
+    ]
+  },
+  "ans_address_que_operator_request": {
+    "id": "e9eadf98-6c60-4b0a-b178-3aa7df7f2b35",
+    "name": "ans_address_que_operator_request",
+    "inputContext": [
+      "buyers_12",
+      "buyers_12_z"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_address_que_operator_request",
+        "lifespan": 1
+      },
+      {
+        "name": "que_operator_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Would you like to continue this chat with our local area specialist?",
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "addressmap",
+            "meta": "@sys.any",
+            "alias": "address",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "address",
+            "meta": "@sys.any",
+            "alias": "address",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "location",
+            "meta": "@sys.any",
+            "alias": "address",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "buyers_12",
+        "buyers_12_z"
+      ],
+      "outputContexts": {
+        "ans_address_que_operator_request": 1,
+        "que_operator_request": 1
+      }
+    },
+    "inputIntents": [
+      "ans_buyer_name_que_property_address"
+    ],
+    "activeCtx": {
+      "ans_address_que_operator_request": 1,
+      "que_operator_request": 1
+    },
+    "outputIntents": [
+      "ans_operator_request_no_que_wait_user_response",
+      "ans_operator_request_yes"
+    ]
+  },
+  "ans_buyer_email_que_phone": {
+    "id": "32aa0023-aa7a-47c8-a0d1-5234506af2fd",
+    "name": "ans_buyer_email_que_phone",
+    "inputContext": [
+      "ans_08_special_content_que_09_email",
+      "que_09_email"
+    ],
+    "outputContexts": [
+      {
+        "name": "buyers_10",
+        "lifespan": 1
+      },
+      {
+        "name": "buyers_10_z",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_buyer_email_que_phone-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "If we get disconnected, what is the best phone number to reach you?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "email is ",
+            "userDefined": false
+          },
+          {
+            "text": "joshua@weberon.net",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "joshua@weberon.net",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "john@gmail.com",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "4c0fc8cf-ddb1-4b8e-8c8d-91ea1aa08f33",
+      "parentId": "32aa0023-aa7a-47c8-a0d1-5234506af2fd",
+      "rootParentId": "32aa0023-aa7a-47c8-a0d1-5234506af2fd",
+      "name": "ans_buyer_email_que_phone - fallback",
+      "inputContext": [
+        "buyers_10",
+        "buyers_10_z",
+        "ans_buyer_email_que_phone-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "buyers_10",
+          "lifespan": 1
+        },
+        {
+          "name": "buyers_10_z",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_buyer_email_que_phone-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide a valid phone number"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ans_08_special_content_que_09_email",
+        "que_09_email"
+      ],
+      "outputContexts": {
+        "buyers_10": 1,
+        "buyers_10_z": 1,
+        "ans_buyer_email_que_phone-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_08_special_content_que_09_email"
+    ],
+    "activeCtx": {
+      "ans_08_special_content_que_09_email-followup": 1,
+      "buyers_10": 1,
+      "buyers_10_z": 1,
+      "ans_buyer_email_que_phone-followup": 2
+    },
+    "outputIntents": [
+      "buyer_phone_que_name"
+    ]
+  },
+  "ans_buyer_name_que_property_address": {
+    "id": "f62540cf-9df0-4b8f-920d-c16b0000b2d6",
+    "name": "ans_buyer_name_que_property_address",
+    "inputContext": [
+      "buyers_11",
+      "buyers_11_z"
+    ],
+    "outputContexts": [
+      {
+        "name": "buyers_12",
+        "lifespan": 1
+      },
+      {
+        "name": "buyers_12_z",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "what is your property address?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "vikas shashtry",
+            "meta": "@sys.any",
+            "alias": "given_name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "joshua ponnachan",
+            "meta": "@sys.any",
+            "alias": "given_name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "vikas",
+            "meta": "@sys.any",
+            "alias": "given_name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "name is ",
+            "userDefined": false
+          },
+          {
+            "text": "vikas",
+            "meta": "@sys.any",
+            "alias": "given_name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "My name is vikas",
+            "meta": "@sys.any",
+            "alias": "given_name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "buyers_11",
+        "buyers_11_z"
+      ],
+      "outputContexts": {
+        "buyers_12": 1,
+        "buyers_12_z": 1
+      }
+    },
+    "inputIntents": [
+      "buyer_phone_que_name"
+    ],
+    "activeCtx": {
+      "buyers_12": 1,
+      "buyers_12_z": 1
+    },
+    "outputIntents": [
+      "ans_address_que_operator_request"
+    ]
+  },
+  "ans_operator_request_no_que_wait_user_response": {
+    "id": "43bb3401-33a9-449f-a856-0a647a86136c",
+    "name": "ans_operator_request_no_que_wait_user_response",
+    "inputContext": [
+      "ans_address_que_operator_request",
+      "que_operator_request"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_operator_request_no_que_wait_user_response",
+        "lifespan": 1
+      },
+      {
+        "name": "que_wait_user_response",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "ok!"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_address_que_operator_request",
+        "que_operator_request"
+      ],
+      "outputContexts": {
+        "ans_operator_request_no_que_wait_user_response": 1,
+        "que_wait_user_response": 1
+      }
+    },
+    "inputIntents": [
+      "ans_address_que_operator_request",
+      "ans_wait_user_response_que_operator_request2"
+    ],
+    "activeCtx": {
+      "ans_operator_request_no_que_wait_user_response": 1,
+      "que_wait_user_response": 1
+    },
+    "outputIntents": [
+      "ans_wait_user_response_que_operator_request2"
+    ]
+  },
+  "ans_operator_request_yes": {
+    "id": "63eb270a-47e6-4e3e-b33c-ffbce042fb13",
+    "name": "ans_operator_request_yes",
+    "inputContext": [
+      "ans_address_que_operator_request",
+      "que_operator_request"
+    ],
+    "outputContexts": [
+      {
+        "name": "operator_request",
+        "lifespan": 5
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Wait a second.."
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_address_que_operator_request",
+        "que_operator_request"
+      ],
+      "outputContexts": {
+        "operator_request": 5
+      }
+    },
+    "hasOperatorRequest": true,
+    "inputIntents": [
+      "ans_wait_user_response_que_operator_request2",
+      "ans_address_que_operator_request"
+    ],
+    "activeCtx": {
+      "operator_request": 5
+    },
+    "outputIntents": []
+  },
+  "ans_wait_user_response_que_operator_request2": {
+    "id": "0b28cd2a-0bbc-4ed9-9375-7f0ca9f9e7ac",
+    "name": "ans_wait_user_response_que_operator_request2",
+    "inputContext": [
+      "ans_operator_request_no_que_wait_user_response",
+      "que_wait_user_response"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_address_que_operator_request",
+        "lifespan": 1
+      },
+      {
+        "name": "que_operator_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Would you like to continue this chat with our local area specialist *?",
+          "quick_replies": [
+            {
+              "payload": "Yes",
+              "title": "Yes"
+            },
+            {
+              "payload": "No",
+              "title": "No"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "a good day",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello again",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I greet you",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "lovely day isn't it",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "long time no see",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "greetings",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "howdy",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "heya",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "just going to say hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "any",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_operator_request_no_que_wait_user_response",
+        "que_wait_user_response"
+      ],
+      "outputContexts": {
+        "ans_address_que_operator_request": 1,
+        "que_operator_request": 1
+      }
+    },
+    "inputIntents": [
+      "ans_operator_request_no_que_wait_user_response"
+    ],
+    "activeCtx": {
+      "ans_address_que_operator_request": 1,
+      "que_operator_request": 1
+    },
+    "outputIntents": [
+      "ans_operator_request_no_que_wait_user_response",
+      "ans_operator_request_yes"
+    ]
+  },
+  "buyer_phone_que_name": {
+    "id": "f2a7d321-d1fa-46e1-bfea-f67ffc7fa6c1",
+    "name": "buyer_phone_que_name",
+    "inputContext": [
+      "buyers_10",
+      "buyers_10_z"
+    ],
+    "outputContexts": [
+      {
+        "name": "buyers_11",
+        "lifespan": 1
+      },
+      {
+        "name": "buyers_11_z",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is your name?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "0091 7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone_number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone_number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+91 7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone_number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+91-7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone_number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "buyers_10",
+        "buyers_10_z"
+      ],
+      "outputContexts": {
+        "buyers_11": 1,
+        "buyers_11_z": 1
+      }
+    },
+    "inputIntents": [
+      "ans_buyer_email_que_phone"
+    ],
+    "activeCtx": {
+      "ans_buyer_email_que_phone-followup": 1,
+      "buyers_11": 1,
+      "buyers_11_z": 1
+    },
+    "outputIntents": [
+      "ans_buyer_name_que_property_address"
+    ]
+  },
+  "Default Welcome Intent": {
+    "id": "b2e1d242-ed81-45c8-98f2-b4b7dd3b164f",
+    "name": "Default Welcome Intent",
+    "inputContext": [],
+    "outputContexts": [
+      {
+        "name": "welcome",
+        "lifespan": 1
+      },
+      {
+        "name": "buyers_01",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Welcome!!!   When are you planning on making a move?",
+          "quick_replies": [
+            {
+              "title": "< 3 months",
+              "payload": "< 3 months"
+            },
+            {
+              "title": "3 to 6 months",
+              "payload": "3 to 6 months"
+            },
+            {
+              "title": "> 6 months",
+              "payload": "> 6 months"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "just going to say hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "heya",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "howdy",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "greetings",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "long time no see",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "lovely day isn't it",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I greet you",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello again",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "a good day",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [],
+      "outputContexts": {
+        "welcome": 1,
+        "buyers_01": 1
+      }
+    },
+    "inputIntents": [],
+    "activeCtx": {
+      "welcome": 1,
+      "buyers_01": 1
+    },
+    "outputIntents": [
+      "ans_01_welcome_que_02_ownership"
+    ]
+  }
+}

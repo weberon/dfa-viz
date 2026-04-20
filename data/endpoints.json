@@ -1,0 +1,42 @@
+[
+  {
+    "endpoint": "data/wspl-traqr_cs2.json",
+    "agentName": "wspl-traqr_cs2",
+    "date": "2026-04-20T13:19:37.468Z"
+  },
+  {
+    "endpoint": "data/wspl-traqr_cs.json",
+    "agentName": "wspl-traqr_cs",
+    "date": "2026-04-20T13:19:37.453Z"
+  },
+  {
+    "endpoint": "data/wspl-test_fact_collection.json",
+    "agentName": "wspl-test_fact_collection",
+    "date": "2026-04-20T13:19:37.395Z"
+  },
+  {
+    "endpoint": "data/wspl-serenest-services.json",
+    "agentName": "wspl-serenest-services",
+    "date": "2026-04-20T13:19:37.369Z"
+  },
+  {
+    "endpoint": "data/wspl-referral.json",
+    "agentName": "wspl-referral",
+    "date": "2026-04-20T13:19:37.355Z"
+  },
+  {
+    "endpoint": "data/wspl-neutral_agent.json",
+    "agentName": "wspl-neutral_agent",
+    "date": "2026-04-20T13:19:37.345Z"
+  },
+  {
+    "endpoint": "data/wspl-buyers_v2_addressVerification.json",
+    "agentName": "wspl-buyers_v2_addressVerification",
+    "date": "2026-04-20T13:19:37.329Z"
+  },
+  {
+    "endpoint": "data/wspl-buyersAgentV2.json",
+    "agentName": "wspl-buyersAgentV2",
+    "date": "2026-04-20T13:19:37.291Z"
+  }
+]

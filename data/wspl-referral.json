@@ -1,0 +1,748 @@
+{
+  "Default Welcome Intent": {
+    "id": "fd78cc1e-895f-42a6-a4ea-cd282b2b3b8d",
+    "name": "Default Welcome Intent",
+    "inputContext": [],
+    "outputContexts": [
+      {
+        "name": "welcome",
+        "lifespan": 1
+      },
+      {
+        "name": "ref_1",
+        "lifespan": 1
+      },
+      {
+        "name": "DefaultWelcomeIntent-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "We are committed to raising $50,000 this year to help underprivileged kids. As you know, we donate a portion of our income to this great cause when we sell or buy a house for our clients. So, your referral helps support this worthy cause. Who do we have the pleasure of chatting with?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "just going to say hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "heya",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "howdy",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "greetings",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "long time no see",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "lovely day isn't it",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I greet you",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello again",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "a good day",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "8ce1a00d-47be-44d8-b0c1-d9ab51f782ef",
+      "parentId": "fd78cc1e-895f-42a6-a4ea-cd282b2b3b8d",
+      "rootParentId": "fd78cc1e-895f-42a6-a4ea-cd282b2b3b8d",
+      "name": "Default Welcome Intent - fallback",
+      "inputContext": [
+        "welcome",
+        "ref_1",
+        "DefaultWelcomeIntent-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "welcome",
+          "lifespan": 1
+        },
+        {
+          "name": "ref_1",
+          "lifespan": 1
+        },
+        {
+          "name": "DefaultWelcomeIntent-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide your name"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [],
+      "outputContexts": {
+        "welcome": 1,
+        "ref_1": 1,
+        "DefaultWelcomeIntent-followup": 2
+      }
+    },
+    "inputIntents": [],
+    "activeCtx": {
+      "welcome": 1,
+      "ref_1": 1,
+      "DefaultWelcomeIntent-followup": 2
+    },
+    "outputIntents": [
+      "ans_name_que_ref_name"
+    ]
+  },
+  "ans_name_que_ref_name": {
+    "id": "a16b4d17-0e88-458e-86a4-5811094d8b73",
+    "name": "ans_name_que_ref_name",
+    "inputContext": [
+      "welcome",
+      "ref_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_2",
+        "lifespan": 1
+      },
+      {
+        "name": "cs_name",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_name_que_ref_name-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is the name of your referral?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Joshua Ponnachan",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "James Bond",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "James",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          },
+          {
+            "text": ", Bond",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "James",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "vikas shashtry",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "j",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "jp",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "abc",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "xyz",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "abcde",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "91c38bbc-e8da-4da9-8933-cb66b37fcd59",
+      "parentId": "a16b4d17-0e88-458e-86a4-5811094d8b73",
+      "rootParentId": "a16b4d17-0e88-458e-86a4-5811094d8b73",
+      "name": "ans_name_que_ref_name - fallback",
+      "inputContext": [
+        "ref_2",
+        "cs_name",
+        "ans_name_que_ref_name-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ref_2",
+          "lifespan": 1
+        },
+        {
+          "name": "cs_name",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_ref_name_que_ref_phone-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide the name of your referral"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "welcome",
+        "ref_1"
+      ],
+      "outputContexts": {
+        "ref_2": 1,
+        "cs_name": 1,
+        "ans_name_que_ref_name-followup": 2
+      }
+    },
+    "inputIntents": [
+      "Default Welcome Intent"
+    ],
+    "activeCtx": {
+      "DefaultWelcomeIntent-followup": 1,
+      "ref_2": 1,
+      "cs_name": 1,
+      "ans_name_que_ref_name-followup": 2
+    },
+    "outputIntents": [
+      "ans_ref_name_que_ref_phone"
+    ]
+  },
+  "ans_ref_name_que_ref_phone": {
+    "id": "14e255c2-e15e-4d86-8cd4-e6b87248020c",
+    "name": "ans_ref_name_que_ref_phone",
+    "inputContext": [
+      "ref_2",
+      "cs_name"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_3",
+        "lifespan": 1
+      },
+      {
+        "name": "ref_name",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_ref_name_que_ref_phone-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "And, the best phone number to reach your referral?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Praveen Kumar",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Joshua Ponnachan",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "name is ",
+            "userDefined": false
+          },
+          {
+            "text": "James",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          },
+          {
+            "text": ", Bond",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "Name is ",
+            "userDefined": false
+          },
+          {
+            "text": "James bond",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "vikas shashtry",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "j",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "jp",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "xyz",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "a",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "abcde",
+            "meta": "@sys.given-name",
+            "alias": "given-name",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "84f84e84-826a-497d-9b93-a7b863b82405",
+      "parentId": "14e255c2-e15e-4d86-8cd4-e6b87248020c",
+      "rootParentId": "14e255c2-e15e-4d86-8cd4-e6b87248020c",
+      "name": "ans_ref_name_que_ref_phone - fallback",
+      "inputContext": [
+        "ref_3",
+        "ref_name",
+        "ans_ref_name_que_ref_phone-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ans_ref_name_que_ref_phone-followup",
+          "lifespan": 1
+        },
+        {
+          "name": "ref_3",
+          "lifespan": 1
+        },
+        {
+          "name": "ref_name",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide a valid phone number"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ref_2",
+        "cs_name"
+      ],
+      "outputContexts": {
+        "ref_3": 1,
+        "ref_name": 1,
+        "ans_ref_name_que_ref_phone-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_name_que_ref_name"
+    ],
+    "activeCtx": {
+      "ans_name_que_ref_name-followup": 1,
+      "ref_3": 1,
+      "ref_name": 1,
+      "ans_ref_name_que_ref_phone-followup": 2
+    },
+    "outputIntents": [
+      "ans_ref_phone_que_end"
+    ]
+  },
+  "ans_ref_phone_que_end": {
+    "id": "3a276f30-d4d4-4b5a-9092-91b488bee4ca",
+    "name": "ans_ref_phone_que_end",
+    "inputContext": [
+      "ref_3",
+      "ref_name"
+    ],
+    "outputContexts": [
+      {
+        "name": "ref_4",
+        "lifespan": 1
+      },
+      {
+        "name": "ref_phone",
+        "lifespan": 1
+      },
+      {
+        "name": "operator_request",
+        "lifespan": 5
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Thank you and we will call you soon."
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "925‐452‐7483",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "123-456-7890",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+91-7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "0091 7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ref_3",
+        "ref_name"
+      ],
+      "outputContexts": {
+        "ref_4": 1,
+        "ref_phone": 1,
+        "operator_request": 5
+      }
+    },
+    "hasOperatorRequest": true,
+    "inputIntents": [
+      "ans_ref_name_que_ref_phone"
+    ],
+    "activeCtx": {
+      "ans_ref_name_que_ref_phone-followup": 1,
+      "ref_4": 1,
+      "ref_phone": 1,
+      "operator_request": 5
+    },
+    "outputIntents": []
+  }
+}

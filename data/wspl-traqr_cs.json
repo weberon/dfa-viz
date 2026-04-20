@@ -1,0 +1,1284 @@
+{
+  "Default Welcome Intent": {
+    "id": "b59e5d51-f1b3-4a68-8e1d-342e5a9ecd9a",
+    "name": "Default Welcome Intent",
+    "inputContext": [],
+    "outputContexts": [
+      {
+        "name": "welcome",
+        "lifespan": 1
+      },
+      {
+        "name": "que_1",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "payload": "Yes",
+              "title": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            }
+          ],
+          "text": "Welcome to TraQR. Are you a registered user of TraQR?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "just going to say hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "heya",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "howdy",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "greetings",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hey",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "long time no see",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "lovely day isn't it",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I greet you",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello again",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hi",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "hello there",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "a good day",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [],
+      "outputContexts": {
+        "welcome": 1,
+        "que_1": 1
+      }
+    },
+    "inputIntents": [],
+    "activeCtx": {
+      "welcome": 1,
+      "que_1": 1
+    },
+    "outputIntents": [
+      "ans_q1_n_que_q1n_1_general",
+      "ans_q1_y_que_q1y_1_email"
+    ]
+  },
+  "ans_no_q1n2n1_1n_b4_op_req_que_b4_operator_request": {
+    "id": "653ccd18-82e0-4756-a27d-790c11a91597",
+    "name": "ans_no_q1n2n1_1n_b4_op_req_que_b4_operator_request",
+    "inputContext": [
+      "ques_1n2n1_1n",
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1n2n1_1n",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            }
+          ],
+          "text": "Would you like to continue this chat with our Support specialist?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ques_1n2n1_1n",
+        "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+      ],
+      "outputContexts": {
+        "ques_1n2n1_1n": 1,
+        "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+    ],
+    "activeCtx": {
+      "ques_1n2n1_1n": 1,
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1
+    },
+    "outputIntents": [
+      "ans_no_q1n2n1_1n_b4_op_req_que_b4_operator_request",
+      "ans_yes_q1n2n1_1n_b4_op_req_que_operator_request"
+    ]
+  },
+  "ans_q1_n_que_q1n_1_general": {
+    "id": "6302b232-6568-4e35-9c1c-0bd5e6719c5e",
+    "name": "ans_q1_n_que_q1n_1_general",
+    "inputContext": [
+      "welcome",
+      "que_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_q1_n_que_q1n_1_general",
+        "lifespan": 1
+      },
+      {
+        "name": "ques_1n_1",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What question do you have on the use of TraQR?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "welcome",
+        "que_1"
+      ],
+      "outputContexts": {
+        "ans_q1_n_que_q1n_1_general": 1,
+        "ques_1n_1": 1
+      }
+    },
+    "inputIntents": [
+      "Default Welcome Intent"
+    ],
+    "activeCtx": {
+      "ans_q1_n_que_q1n_1_general": 1,
+      "ques_1n_1": 1
+    },
+    "outputIntents": [
+      "ans_q1n_general_que_q1n_2_video"
+    ]
+  },
+  "ans_q1_y_que_q1y_1_email": {
+    "id": "684902f3-5472-4080-aa8f-995af89a91b5",
+    "name": "ans_q1_y_que_q1y_1_email",
+    "inputContext": [
+      "welcome",
+      "que_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1yes_1",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1_y_que_q1y_1_email",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1_y_que_q1y_1_email-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is the email that is associated with your account in TraQR?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "9c9f2e96-aef1-4829-a2db-9f3de05e4bcb",
+      "parentId": "684902f3-5472-4080-aa8f-995af89a91b5",
+      "rootParentId": "684902f3-5472-4080-aa8f-995af89a91b5",
+      "name": "ans_q1_y_que_q1y_1_email - fallback",
+      "inputContext": [
+        "ques_1yes_1",
+        "ans_q1_y_que_q1y_1_email",
+        "ans_q1_y_que_q1y_1_email-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ques_1yes_1",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1_y_que_q1y_1_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1_y_que_q1y_1_email-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide the email that is associated with your account in TraQR"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "welcome",
+        "que_1"
+      ],
+      "outputContexts": {
+        "ques_1yes_1": 1,
+        "ans_q1_y_que_q1y_1_email": 1,
+        "ans_q1_y_que_q1y_1_email-followup": 2
+      }
+    },
+    "inputIntents": [
+      "Default Welcome Intent"
+    ],
+    "activeCtx": {
+      "ques_1yes_1": 1,
+      "ans_q1_y_que_q1y_1_email": 1,
+      "ans_q1_y_que_q1y_1_email-followup": 2
+    },
+    "outputIntents": [
+      "ans_q1y_email_que_q1y_2_phone"
+    ]
+  },
+  "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": {
+    "id": "776762b2-1a57-4e6d-8691-ddf40cbe39b6",
+    "name": "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request",
+    "inputContext": [
+      "ans_q1n_faq_que_q1n2n1_1_additional",
+      "ques_1n2n1_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1n2n1_1n",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            }
+          ],
+          "text": "Would you like to continue this chat with our Support specialist?"
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1n_faq_que_q1n2n1_1_additional",
+        "ques_1n2n1_1"
+      ],
+      "outputContexts": {
+        "ques_1n2n1_1n": 1,
+        "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1n_faq_que_q1n2n1_1_additional"
+    ],
+    "activeCtx": {
+      "ques_1n2n1_1n": 1,
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1
+    },
+    "outputIntents": [
+      "ans_no_q1n2n1_1n_b4_op_req_que_b4_operator_request",
+      "ans_yes_q1n2n1_1n_b4_op_req_que_operator_request"
+    ]
+  },
+  "ans_q1n2n1_1_additional_y_que_email": {
+    "id": "e91b9c62-9321-4e38-bdc8-cf696abc18a7",
+    "name": "ans_q1n2n1_1_additional_y_que_email",
+    "inputContext": [
+      "ans_q1n_faq_que_q1n2n1_1_additional",
+      "ques_1n2n1_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1yes_1",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1_y_que_q1y_1_email",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n2n1_1_additional_y_que_email-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please Help us with your  email address"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "b2a47639-11fd-4ec7-a106-24380ed65a9d",
+      "parentId": "e91b9c62-9321-4e38-bdc8-cf696abc18a7",
+      "rootParentId": "e91b9c62-9321-4e38-bdc8-cf696abc18a7",
+      "name": "ans_q1n2n1_1_additional_y_que_email - fallback",
+      "inputContext": [
+        "ques_1yes_1",
+        "ans_q1_y_que_q1y_1_email",
+        "ans_q1n2n1_1_additional_y_que_email",
+        "ans_q1n2n1_1_additional_y_que_email-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ques_1yes_1",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1_y_que_q1y_1_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1n2n1_1_additional_y_que_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1n2n1_1_additional_y_que_email-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide correct Email address",
+            "Need your correct email address"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ans_q1n_faq_que_q1n2n1_1_additional",
+        "ques_1n2n1_1"
+      ],
+      "outputContexts": {
+        "ques_1yes_1": 1,
+        "ans_q1_y_que_q1y_1_email": 1,
+        "ans_q1n2n1_1_additional_y_que_email-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_q1n_faq_que_q1n2n1_1_additional"
+    ],
+    "activeCtx": {
+      "ques_1yes_1": 1,
+      "ans_q1_y_que_q1y_1_email": 1,
+      "ans_q1n2n1_1_additional_y_que_email-followup": 2
+    },
+    "outputIntents": [
+      "ans_q1y_email_que_q1y_2_phone"
+    ]
+  },
+  "ans_q1n_faq_que_q1n2n1_1_additional": {
+    "id": "96a37b63-cf66-41bc-aa76-b86e2c318c72",
+    "name": "ans_q1n_faq_que_q1n2n1_1_additional",
+    "inputContext": [
+      "ans_q1n_video_que_q1n2n_1_faq",
+      "ques_1n2n_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1n2n1_1",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n_faq_que_q1n2n1_1_additional",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Do you have additional questions on use of TraQR?",
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "payload": "No",
+              "title": "No"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "need help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "I have gone through fact",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1n_video_que_q1n2n_1_faq",
+        "ques_1n2n_1"
+      ],
+      "outputContexts": {
+        "ques_1n2n1_1": 1,
+        "ans_q1n_faq_que_q1n2n1_1_additional": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1n_video_que_q1n2n_1_faq"
+    ],
+    "activeCtx": {
+      "ques_1n2n1_1": 1,
+      "ans_q1n_faq_que_q1n2n1_1_additional": 1
+    },
+    "outputIntents": [
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request",
+      "ans_q1n2n1_1_additional_y_que_email"
+    ]
+  },
+  "ans_q1n_general_que_q1n_2_video": {
+    "id": "5541a531-4e4a-4af5-b4cf-7d4529855bf9",
+    "name": "ans_q1n_general_que_q1n_2_video",
+    "inputContext": [
+      "ans_q1_n_que_q1n_1_general",
+      "ques_1n_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_q1n_general_que_q1n_2_video",
+        "lifespan": 1
+      },
+      {
+        "name": "ques_1n_2",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "payload": {
+          "text": "Did you watch the video of 'How to Use TraQR' in this page?",
+          "quick_replies": [
+            {
+              "title": "Yes",
+              "payload": "Yes"
+            },
+            {
+              "title": "No",
+              "payload": "No"
+            }
+          ]
+        }
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Need help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1_n_que_q1n_1_general",
+        "ques_1n_1"
+      ],
+      "outputContexts": {
+        "ans_q1n_general_que_q1n_2_video": 1,
+        "ques_1n_2": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1_n_que_q1n_1_general"
+    ],
+    "activeCtx": {
+      "ans_q1n_general_que_q1n_2_video": 1,
+      "ques_1n_2": 1
+    },
+    "outputIntents": [
+      "ans_q1n_video_que_q1n2n_1_faq",
+      "ans_q1n_video_que_q1n2y_1_email"
+    ]
+  },
+  "ans_q1n_video_que_q1n2n_1_faq": {
+    "id": "ebf55c2e-f492-4073-a926-bee24fa0621e",
+    "name": "ans_q1n_video_que_q1n2n_1_faq",
+    "inputContext": [
+      "ans_q1n_general_que_q1n_2_video",
+      "ques_1n_2"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_q1n_video_que_q1n2n_1_faq",
+        "lifespan": 1
+      },
+      {
+        "name": "ques_1n2n_1",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please review FAQs and watch 'How to use TraQR' at https://www.reachpersona.com/support"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "No",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1n_general_que_q1n_2_video",
+        "ques_1n_2"
+      ],
+      "outputContexts": {
+        "ans_q1n_video_que_q1n2n_1_faq": 1,
+        "ques_1n2n_1": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1n_general_que_q1n_2_video"
+    ],
+    "activeCtx": {
+      "ans_q1n_video_que_q1n2n_1_faq": 1,
+      "ques_1n2n_1": 1
+    },
+    "outputIntents": [
+      "ans_q1n_faq_que_q1n2n1_1_additional"
+    ]
+  },
+  "ans_q1n_video_que_q1n2y_1_email": {
+    "id": "7cc62939-8673-465a-a736-1215ff2d9417",
+    "name": "ans_q1n_video_que_q1n2y_1_email",
+    "inputContext": [
+      "ans_q1n_general_que_q1n_2_video",
+      "ques_1n_2"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1yes_1",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1_y_que_q1y_1_email",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n_video_que_q1n2y_1_email-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please Provide your  email address"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "425c21d0-b78c-412d-9a9d-28517212d7f1",
+      "parentId": "7cc62939-8673-465a-a736-1215ff2d9417",
+      "rootParentId": "7cc62939-8673-465a-a736-1215ff2d9417",
+      "name": "ans_q1n_video_que_q1n2y_1_email - fallback",
+      "inputContext": [
+        "ans_q1n_video_que_q1n2y_1_email",
+        "ques_1yes_1",
+        "ans_q1_y_que_q1y_1_email",
+        "ans_q1n_video_que_q1n2y_1_email-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ans_q1n_video_que_q1n2y_1_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ques_1yes_1",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1_y_que_q1y_1_email",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1n_video_que_q1n2y_1_email-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "Please provide correct Email Address"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ans_q1n_general_que_q1n_2_video",
+        "ques_1n_2"
+      ],
+      "outputContexts": {
+        "ques_1yes_1": 1,
+        "ans_q1_y_que_q1y_1_email": 1,
+        "ans_q1n_video_que_q1n2y_1_email-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_q1n_general_que_q1n_2_video"
+    ],
+    "activeCtx": {
+      "ques_1yes_1": 1,
+      "ans_q1_y_que_q1y_1_email": 1,
+      "ans_q1n_video_que_q1n2y_1_email-followup": 2
+    },
+    "outputIntents": [
+      "ans_q1y_email_que_q1y_2_phone"
+    ]
+  },
+  "ans_q1y_email_que_q1y_2_phone": {
+    "id": "716b7ed7-9ae9-401f-a312-ca67bd8ca8d0",
+    "name": "ans_q1y_email_que_q1y_2_phone",
+    "inputContext": [
+      "ans_q1_y_que_q1y_1_email",
+      "ques_1yes_1"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_q1y_email_que_q1y_2_phone",
+        "lifespan": 1
+      },
+      {
+        "name": "ques_1y_2",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1y_email_que_q1y_2_phone-followup",
+        "lifespan": 2
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is the best phone number to reach  you?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "joshua@weberon.net",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "my email address is ",
+            "userDefined": false
+          },
+          {
+            "text": "joshua@weberon.net",
+            "meta": "@sys.email",
+            "alias": "email",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {
+      "fallbackId": "13f96db6-29f5-40f1-b722-15845731beab",
+      "parentId": "716b7ed7-9ae9-401f-a312-ca67bd8ca8d0",
+      "rootParentId": "716b7ed7-9ae9-401f-a312-ca67bd8ca8d0",
+      "name": "ans_q1y_email_que_q1y_2_phone - fallback",
+      "inputContext": [
+        "ans_q1y_email_que_q1y_2_phone",
+        "ques_1y_2",
+        "ans_q1y_email_que_q1y_2_phone-followup"
+      ],
+      "outputContexts": [
+        {
+          "name": "ans_q1y_email_que_q1y_2_phone",
+          "lifespan": 1
+        },
+        {
+          "name": "ques_1y_2",
+          "lifespan": 1
+        },
+        {
+          "name": "ans_q1y_email_que_q1y_2_phone-followup",
+          "lifespan": 1
+        }
+      ],
+      "messages": [
+        {
+          "speech": [
+            "What is the best phone number to reach  you?"
+          ]
+        }
+      ]
+    },
+    "contexts": {
+      "inputContext": [
+        "ans_q1_y_que_q1y_1_email",
+        "ques_1yes_1"
+      ],
+      "outputContexts": {
+        "ans_q1y_email_que_q1y_2_phone": 1,
+        "ques_1y_2": 1,
+        "ans_q1y_email_que_q1y_2_phone-followup": 2
+      }
+    },
+    "inputIntents": [
+      "ans_q1n2n1_1_additional_y_que_email",
+      "ans_q1n_video_que_q1n2y_1_email",
+      "ans_q1_y_que_q1y_1_email"
+    ],
+    "activeCtx": {
+      "ans_q1_y_que_q1y_1_email-followup": 1,
+      "ans_q1y_email_que_q1y_2_phone": 1,
+      "ques_1y_2": 1,
+      "ans_q1y_email_que_q1y_2_phone-followup": 2
+    },
+    "outputIntents": [
+      "ans_q1y_phone_que_q1y_3_general"
+    ]
+  },
+  "ans_q1y_general_que_q1y_4_operator_request": {
+    "id": "a9dc3c0d-f4f0-4719-a2c0-41febeb17631",
+    "name": "ans_q1y_general_que_q1y_4_operator_request",
+    "inputContext": [
+      "ans_q1y_phone_que_q1y_3_general",
+      "ques_1y_3"
+    ],
+    "outputContexts": [
+      {
+        "name": "ans_q1y_general_que_q1y_4_operator_request",
+        "lifespan": 1
+      },
+      {
+        "name": "ques_1y_4",
+        "lifespan": 1
+      },
+      {
+        "name": "operator_request",
+        "lifespan": 5
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please wait..."
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Need help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "help",
+            "meta": "@sys.any",
+            "alias": "any",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1y_phone_que_q1y_3_general",
+        "ques_1y_3"
+      ],
+      "outputContexts": {
+        "ans_q1y_general_que_q1y_4_operator_request": 1,
+        "ques_1y_4": 1,
+        "operator_request": 5
+      }
+    },
+    "hasOperatorRequest": true,
+    "inputIntents": [
+      "ans_q1y_phone_que_q1y_3_general"
+    ],
+    "activeCtx": {
+      "ans_q1y_general_que_q1y_4_operator_request": 1,
+      "ques_1y_4": 1,
+      "operator_request": 5
+    },
+    "outputIntents": []
+  },
+  "ans_q1y_phone_que_q1y_3_general": {
+    "id": "0d4bf9ed-cd72-4398-8d56-60eaf68a2eb3",
+    "name": "ans_q1y_phone_que_q1y_3_general",
+    "inputContext": [
+      "ans_q1y_email_que_q1y_2_phone",
+      "ques_1y_2"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1y_3",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1y_phone_que_q1y_3_general",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "What is your question regarding use of TraQR?"
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "925-452-7843",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "9254527843",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+91-7349076985",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+1925-452-7843",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+1-925-452-7843",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": true
+          }
+        ],
+        "lang": "en"
+      },
+      {
+        "data": [
+          {
+            "text": "+",
+            "userDefined": false
+          },
+          {
+            "text": "19254527843",
+            "meta": "@sys.phone-number",
+            "alias": "phone-number",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ans_q1y_email_que_q1y_2_phone",
+        "ques_1y_2"
+      ],
+      "outputContexts": {
+        "ques_1y_3": 1,
+        "ans_q1y_phone_que_q1y_3_general": 1
+      }
+    },
+    "inputIntents": [
+      "ans_q1y_email_que_q1y_2_phone"
+    ],
+    "activeCtx": {
+      "ans_q1y_email_que_q1y_2_phone-followup": 1,
+      "ques_1y_3": 1,
+      "ans_q1y_phone_que_q1y_3_general": 1
+    },
+    "outputIntents": [
+      "ans_q1y_general_que_q1y_4_operator_request"
+    ]
+  },
+  "ans_yes_q1n2n1_1n_b4_op_req_que_operator_request": {
+    "id": "f048fcaa-f0cf-4cf6-9550-58e9bf1d07e6",
+    "name": "ans_yes_q1n2n1_1n_b4_op_req_que_operator_request",
+    "inputContext": [
+      "ques_1n2n1_1n",
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+    ],
+    "outputContexts": [
+      {
+        "name": "ques_1n2n1_1n",
+        "lifespan": 1
+      },
+      {
+        "name": "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request",
+        "lifespan": 1
+      },
+      {
+        "name": "operator_request",
+        "lifespan": 1
+      }
+    ],
+    "messages": [
+      {
+        "speech": [
+          "Please wait..."
+        ]
+      }
+    ],
+    "userSays": [
+      {
+        "data": [
+          {
+            "text": "Yes",
+            "userDefined": false
+          }
+        ],
+        "lang": "en"
+      }
+    ],
+    "fallback": {},
+    "contexts": {
+      "inputContext": [
+        "ques_1n2n1_1n",
+        "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+      ],
+      "outputContexts": {
+        "ques_1n2n1_1n": 1,
+        "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1,
+        "operator_request": 1
+      }
+    },
+    "hasOperatorRequest": true,
+    "inputIntents": [
+      "ans_no_q1n2n1_1n_b4_op_req_que_b4_operator_request",
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request"
+    ],
+    "activeCtx": {
+      "ques_1n2n1_1n": 1,
+      "ans_q1n2n1_1_additional_n_que_q1n2n1_1n_b4_op_request": 1,
+      "operator_request": 1
+    },
+    "outputIntents": []
+  }
+}

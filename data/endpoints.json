@@ -2,41 +2,41 @@
   {
     "endpoint": "data/wspl-traqr_cs2.json",
     "agentName": "wspl-traqr_cs2",
-    "date": "2026-04-20T13:19:37.468Z"
+    "date": "2026-04-21T10:26:01.322Z"
   },
   {
     "endpoint": "data/wspl-traqr_cs.json",
     "agentName": "wspl-traqr_cs",
-    "date": "2026-04-20T13:19:37.453Z"
+    "date": "2026-04-21T10:26:01.306Z"
   },
   {
     "endpoint": "data/wspl-test_fact_collection.json",
     "agentName": "wspl-test_fact_collection",
-    "date": "2026-04-20T13:19:37.395Z"
+    "date": "2026-04-21T10:26:01.282Z"
   },
   {
     "endpoint": "data/wspl-serenest-services.json",
     "agentName": "wspl-serenest-services",
-    "date": "2026-04-20T13:19:37.369Z"
+    "date": "2026-04-21T10:26:01.256Z"
   },
   {
     "endpoint": "data/wspl-referral.json",
     "agentName": "wspl-referral",
-    "date": "2026-04-20T13:19:37.355Z"
+    "date": "2026-04-21T10:26:01.234Z"
   },
   {
     "endpoint": "data/wspl-neutral_agent.json",
     "agentName": "wspl-neutral_agent",
-    "date": "2026-04-20T13:19:37.345Z"
+    "date": "2026-04-21T10:26:01.220Z"
   },
   {
     "endpoint": "data/wspl-buyers_v2_addressVerification.json",
     "agentName": "wspl-buyers_v2_addressVerification",
-    "date": "2026-04-20T13:19:37.329Z"
+    "date": "2026-04-21T10:26:01.199Z"
   },
   {
     "endpoint": "data/wspl-buyersAgentV2.json",
     "agentName": "wspl-buyersAgentV2",
-    "date": "2026-04-20T13:19:37.291Z"
+    "date": "2026-04-21T10:26:01.162Z"
   }
 ]
